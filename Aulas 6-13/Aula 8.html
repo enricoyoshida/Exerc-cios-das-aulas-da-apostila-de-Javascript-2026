@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 8</title>
+    <style>
+        .destaque {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Riper é um bom professor</h1>
+
+    <p id="paragrafo">The life snake (a vida cobra)</p>
+
+    <button id="meuButao">Clique aqui</button>
+
+    <script>
+        window.onload = function () {
+
+            //questao 1
+            document.getElementById("titulo").textContent = "Riper é o melhor professor";
+
+            //questao 2
+            document.getElementById("paragrafo").style.backgroundColor = "green";
+
+            //questao 3
+            document.getElementById("meuButao").classList.add("destaque");
+        };
+    </script>
+
+</body>
+</html>

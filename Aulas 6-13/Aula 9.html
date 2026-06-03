@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 9</title>
+    <style>
+        img {
+            width: 200px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>questao 1</h2>
+    <p id="texto">Riper é o melhor professor</p>
+    <button id="botao">Alterar Texto</button>
+
+    <hr>
+ 
+    <h2>questao 2</h2>
+    <input type="text" id="entrada" placeholder="Digite algo">
+    <p id="saida"></p>
+
+    <hr>
+
+    <h2>questao 3</h2>
+    <img id="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQAAn6xdqtvf9h8PhLCUn6hjT7GOYidkp-A&s" alt="Imagem">
+
+    <script>
+        // questao 1
+        document.querySelector("#botao").addEventListener("click", function() {
+            document.querySelector("#texto").textContent = "Ele é superior a todos os outros professores";
+        });
+
+        // questao 2
+        document.querySelector("#entrada").addEventListener("input", function(e) {
+            document.querySelector("#saida").textContent = e.target.value;
+        });
+
+        // questao 3
+        const img = document.querySelector("#imagem");
+
+        img.addEventListener("mouseover", function() {
+            img.style.border = "4px solid blue";
+        });
+
+        img.addEventListener("mouseout", function() {
+            img.style.border = "none";
+        });
+    </script>
+
+</body>
+</html>

@@ -5,4 +5,4 @@ function saudacao(nome)
 {
     return "Olá, " + nome + "!";
 }
-console.log(saudacao("Ripper"));
+console.log(saudacao("Riper"));

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        input {
+            width: 60px;
+            margin: 0 5px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007acc;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        p {
+            margin: 8px 0 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <input id='n1-soma'> + <input id='n2-soma'>
+    <button onclick='somar()'>Somar</button>
+    <p id='resultado-soma'></p>
+        <script>
+        function somar() {
+        let inputA = document.getElementById('n1-soma').value;
+        let inputB = document.getElementById('n2-soma').value;
+        if (inputA === '' || inputB === '') {
+            document.getElementById('resultado-soma').textContent = 'Preencha ambos os valores';
+            return;
+        }
+        let a = parseFloat(inputA);
+        let b = parseFloat(inputB);
+        document.getElementById('resultado-soma').textContent = a + b;
+        }
+        </script>
+
+    <input id='n1-multiplicar'> x <input id='n2-multiplicar'>
+    <button onclick='multiplicar()'>Multiplicar</button>
+    <p id='resultado-multiplicar'></p>
+
+        <script>
+        function multiplicar() {
+        let inputA = document.getElementById('n1-multiplicar').value;
+        let inputB = document.getElementById('n2-multiplicar').value;
+        if (inputA === '' || inputB === '') {
+            document.getElementById('resultado-multiplicar').textContent = 'Preencha ambos os valores';
+            return;
+        }
+        let a = parseFloat(inputA);
+        let b = parseFloat(inputB);
+        document.getElementById('resultado-multiplicar').textContent = a * b;
+        }
+        </script>
+
+
+    <input id='n1-subtrair'> - <input id='n2-subtrair'>
+    <button onclick='subtrair()'>Subtrair</button>
+    <p id='resultado-subtrair'></p>
+
+        <script>
+        function subtrair() {
+        let inputA = document.getElementById('n1-subtrair').value;
+        let inputB = document.getElementById('n2-subtrair').value;
+        if (inputA === '' || inputB === '') {
+            document.getElementById('resultado-subtrair').textContent = 'Preencha ambos os valores';
+            return;
+        }
+        let a = parseFloat(inputA);
+        let b = parseFloat(inputB);
+        document.getElementById('resultado-subtrair').textContent = a - b;
+        }
+        </script>
+
+    <input id='n1-dividir'> / <input id='n2-dividir'>
+    <button onclick='dividir()'>Dividir</button>
+    <p id='resultado-dividir'></p>
+
+        <script>
+        function dividir() {
+        let inputA = document.getElementById('n1-dividir').value;
+        let inputB = document.getElementById('n2-dividir').value;
+        if (inputA === '' || inputB === '') {
+            document.getElementById('resultado-dividir').textContent = 'Preencha ambos os valores';
+            return;
+        }
+        let a = parseFloat(inputA);
+        let b = parseFloat(inputB);
+        document.getElementById('resultado-dividir').textContent = a / b;
+        }
+        </script>
+
+</body>
+</html>
